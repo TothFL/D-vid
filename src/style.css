@@ -11,8 +11,18 @@ th{
 
 table{
     width: 100%;
-    border: 10px double black;
-    background: -webkit-radial-gradient(red,blue);
+    border: 20px double black;
+}
+
+table:hover{
+
+    background: -webkit-linear-gradient(90deg,rgb(68, 0, 255),rgb(0, 0, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    box-shadow: 0px 0px 1000px rgb(20, 177, 103);
+    cursor:progress;
+}
+
+table:active{
+    display: none;
 }

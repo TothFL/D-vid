@@ -46,7 +46,22 @@ const reszletesGyumolcsok=[
 function generateTbody(){
     reszletesGyumolcsok.forEach((elemek)=>{
         console.log(elemek);
+        let tr = document.createElement("tr");
+        let tdName=document.createElement("td");
+        let tdQuantity=document.createElement("td");
+        let tdPrice=document.createElement("td");
+        
+        tdName.textContent=elemek.name;
+        tdQuantity.textContent=elemek.quantity;
+        tdPrice.textContent=elemek.price;
+        
+        tbody.append(tr);
+        tr.append(tdName);
+        tr.append(tdQuantity);
+        tr.append(tdPrice);
     });
 }
 
 generateTbody();
+
+//-------------------------------------------------
