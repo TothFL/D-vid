@@ -1,0 +1,18 @@
+tr, td, th{
+    border: 2px dotted grey;
+    width: 100px;
+    text-align: center;
+}
+
+th{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+table{
+    width: 100%;
+    border: 10px double black;
+    background: -webkit-radial-gradient(red,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
